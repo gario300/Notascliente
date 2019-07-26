@@ -92,7 +92,8 @@
               this.$axios.get('me')
                     .then(response => {
                         this.me = response.data.data.data;
-                        this.id = response.data.data.data.id
+                        this.id = response.data.data.data.id;
+                        console.log(this.me);
                         
                     this.$axios.get('users/task/'+this.$route.params.id)
                     .then(taskresponse => {
