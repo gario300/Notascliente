@@ -95,7 +95,7 @@
                         this.id = response.data.data.data.id;
                         console.log(this.me);
                         
-                    this.$axios.get('users/task/'+this.$route.params.id)
+                    this.$axios.get('users/task/'+this.id)
                     .then(taskresponse => {
                     this.task = taskresponse.data;
                     console.log(this.task)
