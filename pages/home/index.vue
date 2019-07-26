@@ -56,6 +56,7 @@ export default {
   components: {
 logout
 },
+  middleware: ['auth'],
   data(){
   return{
     task: new task(),
